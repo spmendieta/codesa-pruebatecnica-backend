@@ -3,13 +3,15 @@ package com.spmendietadev.microservicios.app.usuarios.services;
 import com.spmendietadev.microservicios.app.usuarios.models.entity.Usuario;
 import com.spmendietadev.microservicios.app.usuarios.models.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
 
+@Service
 public class UsuarioServiceImplementation implements UsuarioService {
 
-    //@Autowired
+    @Autowired
     private UsuarioRepository usuarioRepository;
 
     @Override
